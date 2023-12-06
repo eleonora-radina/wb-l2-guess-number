@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <title>GUESS THE NUMBER</title>
+</head>
+
+<body class="page">
+  <main class="main">
+    <h1 class="title">GUESS THE NUMBER</h1>
+
+    <div class="container initialContainer">
+      <p class="text">Введите диапазон чисел:</p>
+        <label> от <input type="number" min="1" max="999" value="1" id="minValue"> </label>
+        <label> до <input type="number" min="2" max="1000" value="100" id="maxValue"> </label>
+      <p id="errorText"> </p>
+
+      <button id="startBtn" class="button">Начать игру</button>
+    </div>
+
+    <div class="container guessContainer">
+      <div class="guessInput">
+        <p class="text">Компьютер загадал число.</p>
+        <p class="text">Введите ваше предположение:</p>
+        <input type="number" id="inputNumber">
+        <button id="guessBtn" class="button guessBtn">Отправить</button>
+      </div>
+  
+      <p id="resultText"></p>
+      <p id="hintText"></p>
+      <p id="counter"></p>
+      
+      <button id="restartBtn" class="button">Начать игру заново</button>
+    </div>
+  </main>
+  <script src="./index.js"></script>
+</body>
+
+</html>
